@@ -1,10 +1,17 @@
 const initialState = {
+    busLocation: [],
     location: null,
     map: null,
 };
 
 const reducer = (state = initialState, action) => {
     switch (action.type) {
+        case 'SETBUSLOCATION':
+            console.log()
+            return {
+                ...state,
+                busLocation: action.busLocation
+            };
         case 'SETLOCATION':
             return {
                 ...state,
