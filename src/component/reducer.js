@@ -7,7 +7,6 @@ const initialState = {
 const reducer = (state = initialState, action) => {
     switch (action.type) {
         case 'SETBUSLOCATION':
-            console.log()
             return {
                 ...state,
                 busLocation: action.busLocation
